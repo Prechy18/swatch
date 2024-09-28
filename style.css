@@ -98,6 +98,9 @@ ul li a {
     color: #fff;
     cursor: pointer;
 }
+.mobile-menu-icon{
+    display: none;
+}
 .contactbtn{
     padding: 10px 24px;
     border-radius: 38px;
