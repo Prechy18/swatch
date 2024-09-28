@@ -67,15 +67,10 @@ ul li a {
 
 /* Mobile styles */
 .mobile-nav {
-    width: 100%;
     position: fixed;
     top: 60px;
-    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 40px;
     gap: 45px;
     height: fit-content;
@@ -85,8 +80,8 @@ ul li a {
 .mobile-nav a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 500;
     text-align: center;
 }
 .slide {
@@ -124,13 +119,14 @@ ul li a {
     width: 100%;
 }
 .zen {
+    font-size: 48px;
     color: #0be0e0; 
+    font-weight: 600;
 }
 .sectx{
     font-size: 20px;
     font-weight: 200;
     color: #fff;
-    width: 70%;
     margin-top: -15px;
 }
 .learn{
@@ -190,6 +186,9 @@ ul li a {
     .sectx {
         font-size: 18px;
     }
+    .zen{
+        text-align: center;
+    }
     #firsttx {
         font-size: 45px;
     }
@@ -230,7 +229,64 @@ ul li a {
         color: #000;
         font-size: 16px;
     }
-    .hero{
-        height: fit-content;
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-img {
+        display: none;
+    }
+    .hero-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sectx {
+        font-size: 16px;
+    }
+    .zen{
+        text-align: center;
+        font-size: 43px;
+    }
+    #firsttx {
+        font-size: 43px;
+    }
+    ul{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .sunlight-image{
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    .contactbtn {
+        display: none;
+    }
+    header {
+        width: 100%;
+        position: relative;
+    }
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .contactbtn-mobile{
+        display: block;
+        padding: 15px 100px;
+        border-radius: 38px;
+        border: none;
+    }
+    .contactbtn-mobile a{
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
     }
 }
+
